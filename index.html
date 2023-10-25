@@ -5,11 +5,11 @@
   <title>Mockup</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <h1>Contenu projet “Structurer un contenu HTML”</h1>
-  <h2>Page 1 : Histoire d’Internet</h2>
+  <h1>Histoire d’Internet</h1>
 
   <p>
     L’<strong>histoire d'Internet</strong> remonte au développement des
@@ -27,7 +27,7 @@
     1960-1970, l’application pratique des concepts évoqués à la fin des années
     1950 et ensuite, dans les années 1990, lorsque la popularisation des
     fondements de l’Internet moderne passa par l’apparition du
-    <a href="Page2.html">World Wide Web</a>
+    <a id="www-link" href="Page2.html">World Wide Web</a>
   </p>
   <p>
     L’infrastructure d’Internet se répandit autour du monde pour créer le
@@ -39,12 +39,16 @@
     compris avec les retombées de la bulle Internet.
   </p>
 
-  <h3>Chronologie sélective</h3>
-  <table>
+  <h2>Chronologie sélective</h2>
+  <table id="chronology-table">
     ​
-    <tr>
-      <th><strong>Année</strong></th>
-      <th><strong>Évènement</strong></th>
+    <tr id="table-title">
+      <th>
+        <strong>Année</strong>
+      </th>
+      <th>
+        <strong>Évènement</strong>
+      </th>
     </tr>
     ​
     <tr>
@@ -254,11 +258,14 @@
     </tr>
     ​
   </table>
-  <img src="img/web-server.jpg" alt="web server" />
-  <p>
-    Fig.1 - Le premier serveur web, actuellement au musée du CERN, étiqueté «
-    <i>This machine is a server. DO NOT POWER IT DOWN!!</i> »
-  </p>
+  <div id="img-div">
+    <img id="web-icon-img" src="img/web-server.jpg" alt="web server" />
+    <p>
+      Fig.1 - Le premier serveur web, actuellement au musée du CERN, étiqueté
+      «
+      <i>This machine is a server. DO NOT POWER IT DOWN!!</i> »
+    </p>
+  </div>
 
   <h3>Protocole TCP/IP</h3>
 
@@ -275,7 +282,7 @@
     travail de développement.
   </p>
 
-  <p>
+  <p id="encapsulated-text">
     Avec le rôle du réseau physique réduit à son strict minimum, il devint
     alors possible de fusionner à peu près tout type de réseau sans tenir
     compte de leurs caractéristiques et ainsi résoudre le problème que s'était

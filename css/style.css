@@ -1,0 +1,53 @@
+body {
+  background-color: lightgray;
+  text-align: justify;
+}
+
+#www-link {
+  color: red;
+  font-weight: bold;
+}
+
+#table-title {
+  background-color: black;
+  color: white;
+}
+
+#chronology-table tr:hover:not(:first-child) {
+  background-color: grey;
+}
+
+#chronology-table tr:nth-child(even) {
+  background-color: darkgrey;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 900;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+#web-icon-img {
+  max-width: 85vw;
+  margin: 15px;
+  border: 2px solid red;
+}
+
+#img-div {
+  max-width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+#encapsulated-text {
+  color: blue;
+  border: 2px dashed blue;
+}
